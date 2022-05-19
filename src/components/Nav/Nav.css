@@ -1,0 +1,125 @@
+* body{
+    margin: 0;
+}
+
+*.nav-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #ccedc78c;
+    margin-bottom: 3rem;
+    padding: 0.4rem;
+    align-items: center;
+}
+
+
+@media screen and (min-width:320px) and (max-width:767px) {
+
+    .nav-div {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #ccedc78c;
+    margin-bottom: 3rem;
+    padding: 0.4rem;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .hamburger {
+        border-radius: 10px;
+        margin-left: 1rem;
+        z-index: 6;
+    }
+
+    .hamburgerWrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .hamburger div h2 {
+        margin-left: 1rem;
+        margin-top: .8rem;
+        font-weight: 500;
+        text-shadow: 0px 0px 4px #73dc98;
+    }
+
+    .mobileMenu ul {
+        background-color: #000000e7;
+        width: 6rem;
+        border-radius: 13px;
+        margin-left: 0.9rem;
+        padding: 1rem 0 1.5rem 2rem;
+        position: absolute;
+        top: 3rem;
+    }
+
+    .mobileMenu ul li::marker {
+        color: #7dcd805c;
+    }
+
+    .mobileMenu ul a,
+    .mobileMenu ul li {
+        color: #7dcd805c;
+
+    }
+
+    .mobileMenu ul li {
+        text-decoration: underline;
+    }
+
+    .mobileMenu ul a:hover,
+    .mobileMenu ul li:hover {
+        color: #ca5a5a9e;
+    }
+}
+
+@media screen and (min-width:768px){
+
+    .mobileMenu, .hamburger {
+        display: none;
+    }
+
+    .nav-div {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: #ccedc78c;
+        margin-bottom: 3rem;
+        padding: 0.4rem;
+        align-items: center;
+    }
+
+    .menu{
+        display: contents;
+    }
+
+    .menu a {
+        font-size: 1rem;
+    }
+
+    .homeImg {
+        width: 4rem;
+    }
+    .listImg{
+        width: 3rem;
+    }
+    .collectionImg{
+        width: 3.5rem;
+    }
+    
+    .homeImg:hover,.listImg:hover,.collectionImg:hover{
+        transform: scale(1.2);
+        transition-duration: 300ms;
+    }
+    .listImg:hover{
+        transform: scale(1.1);
+        transition-duration: 300ms;
+    }
+}

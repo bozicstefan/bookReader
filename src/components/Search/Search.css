@@ -1,0 +1,122 @@
+* body{
+    background: darkseagreen;
+}
+
+* .search-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: darkseagreen;
+}
+
+.search-div input{
+    width: 15rem;
+    height: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    background: #90f27e;
+    margin-right: 1rem
+}
+
+.input-div{
+    display: flex;
+    flex-direction: row;
+}
+
+.input-div button{
+    border-radius: 8px;
+    background: #90f27e6b;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.input-div button:hover{
+    background-color: #8ee28a;
+}
+
+.suggestion{
+    border-right: 1px solid #c5dcc9;
+    border-left: 1px solid #c5dcc9;
+    border-bottom: 1px solid #c5dcc9;
+    cursor: pointer;
+    text-align: center;
+    padding: 0.3rem 0.2rem;
+}
+.suggestion:hover{
+    background-color: rgb(140, 203, 115);
+}
+
+.suggestions-div{
+    width: 15rem;
+    margin-left: -7rem;
+}
+
+
+@media screen and (min-width:320px) and (max-width:475px) {
+
+    .suggestions-div {
+        width: 10rem;
+        margin-left: -5.4rem
+    }
+    .search-div input {
+        width: 10rem;
+        height: 2rem;
+        text-align: center;
+        font-size: 1.1rem;
+        border-radius: 10px;
+        background: #90f27e;
+        margin-right: 1rem;
+    }
+}
+
+@media screen and (min-width:476px) and (max-width:767px) {
+    .suggestions-div {
+    width: 19rem;
+    margin-left: -7rem;
+}
+
+.search-div input {
+    width: 19rem;
+    height: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    background: #90f27e;
+    margin-right: 1rem;
+}
+}
+
+@media screen and (min-width:768px) and (max-width:1024px)  {
+    .suggestions-div {
+        width: 25rem;
+        margin-left: -7rem;
+    }
+    
+    .search-div input {
+        width: 25rem;
+        height: 2rem;
+        text-align: center;
+        font-size: 1.5rem;
+        border-radius: 10px;
+        background: #90f27e;
+        margin-right: 1rem;
+    }
+}
+
+@media screen and (min-width:1025px){
+    .suggestions-div {
+        width: 30rem;
+        margin-left: -7rem;
+    }
+    
+    .search-div input {
+        width: 30rem;
+        height: 2.5rem;
+        text-align: center;
+        font-size: 1.5rem;
+        border-radius: 10px;
+        background: #90f27e;
+        margin-right: 1rem;
+    }
+}

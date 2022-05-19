@@ -1,0 +1,295 @@
+* .book-div{
+    background: #2e4d2959;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    width: 15rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+* .bookImg{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+* .book-div:hover{
+    background: #2e4d2987;
+    border: 2px dashed;
+}
+
+* .textarea-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: .5rem;
+}
+
+*.textarea-div textarea {
+    background: cadetblue;
+    color: black;
+    padding: .5rem;
+}
+
+* .textarea-div textarea::placeholder {
+    color: black;
+}
+
+* .addNote-btn{
+    margin: 0.5rem;
+    cursor: pointer;
+    background-color: lightsteelblue;
+}
+
+* .addNote-btn:hover{
+    background-color: #4884d2;
+}
+
+* .book-div p {
+    margin: .5rem;
+}
+
+* .addBook-btn, .removeBook-btn{
+    margin-top: 0.5rem;
+    margin-bottom: .5rem;
+    cursor: pointer;
+}
+
+*.addBook-btn:hover{
+    background: #4826ec5c;
+}
+*.removeBook-btn:hover{
+    background: #ff3f3fc2;
+}
+
+* .bookInfo{
+    text-decoration: underline;
+}
+
+
+
+.bookAdded{
+    border:2px solid ;
+    background: #2e4d2959;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    width: 15rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+* .checkbox-div{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-bottom: 0.4rem;
+    margin-top: 0.4rem;
+}
+
+.status-done{
+    background-color: #00ff2b52;
+    padding: 0.3rem;
+    border-radius: 5px;
+}
+
+.status-inProgress{
+    background-color: #4826ec5c;
+    padding: 0.3rem;
+    border-radius: 5px;
+}
+
+@media screen and (min-width:320px) and (max-width:475px) {
+
+    .input-div {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .input-div button {
+    border-radius: 8px;
+    background: #90f27e6b;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+}
+
+@media screen and (min-width:320px) and (max-width:475px) {
+ .bookInfo {
+    text-decoration: underline;
+    font-size: 1.2rem;
+}
+    .book-div {
+        background: #2e4d2959;
+        padding: .2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+        width: 16rem;
+        margin: 0 auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .bookAdded{
+        border:2px solid ;
+        background: #2e4d2959;
+        padding: .2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+        width: 16rem;
+        margin: 0 auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        box-shadow: 6px 4px 15px #00000099;
+    }
+    .bookInfo {
+        text-decoration: underline;
+        font-size: 1.2rem;
+    }
+
+    .bookImg {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        width: 80%;
+    }
+
+    .textarea-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0.5rem;
+        width: 70%;
+    }
+    .textarea-div textarea {
+        background: cadetblue;
+        color: black;
+        padding: 0.5rem;
+        width: 100%;
+    }
+
+    .myNote-div {
+        overflow-wrap: anywhere;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .myNote-text{
+        background: darkgray;
+    }
+
+    .addBook-btn, .removeBook-btn {
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+            background: #ffe4c4b0;
+        }
+        .addBook-btn:hover{
+            background: #4826ec5c;
+        }
+        .removeBook-btn:hover {
+            background: #ff3f3fc2;
+        }
+    }
+    
+    @media screen and (min-width:476px) and (max-width:767px) {
+        .book-div {
+            background: #2e4d2959;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 10px;
+            width: 20rem;
+            margin: 0 auto;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .bookAdded{
+            border:2px solid ;
+            background: #2e4d2959;
+            padding: .2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 10px;
+            width: 20rem;
+            margin: 0 auto;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            box-shadow: 6px 4px 15px #00000099;
+            font-size: 1.2rem;
+        }
+
+        .bookInfo {
+            text-decoration: underline;
+            font-size: 1.4rem;
+        }
+    }
+
+    @media screen and (min-width:768px)and (max-width:1024px)  {
+        .book-div {
+            background: #2e4d2959;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 10px;
+            width: 25rem;
+            margin: 0 auto;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+        }
+
+        .bookAdded{
+            border:2px solid ;
+            background: #2e4d2959;
+            padding: .2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 10px;
+            width: 25rem;
+            margin: 0 auto;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            box-shadow: 6px 4px 15px #00000099;
+            font-size: 1.4rem;
+        }
+
+        .bookInfo {
+            text-decoration: underline;
+            font-size: 1.4rem;
+        }
+
+        
+        .textarea-div textarea {
+            background: cadetblue;
+            color: black;
+            padding: 0.5rem;
+            width: 20rem;
+        }
+
+        .suggestion {
+            border-right: 1px solid #c5dcc9;
+            border-left: 1px solid #c5dcc9;
+            border-bottom: 1px solid #c5dcc9;
+            cursor: pointer;
+            text-align: center;
+            padding: 0.3rem 0.2rem;
+            font-size: 1.4rem;
+        }
+    }
+    

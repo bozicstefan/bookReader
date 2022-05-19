@@ -1,0 +1,130 @@
+* .collection-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+* .collection-table, .collection-table tr, .collection-table td{
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+.collection-table{
+    margin-bottom: 1rem;
+    background: antiquewhite;
+    width: 70%;
+}
+
+.collectionHeader{
+    font-weight:bold;
+    text-align: center;
+    line-height: 2rem;
+}
+
+* .collectionInfo{
+    text-align: center;
+}
+
+.removeBtn {
+    width: 1rem;
+    margin-left: 10%;
+    vertical-align: text-bottom;
+}
+
+.removeBtn:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.collectionBookInfo:nth-child(odd){
+    background: #8b9b89;
+}
+
+* thead tr:first-of-type {
+    background-color: #1d1f1e80;
+}
+
+* .collectionHeader {
+    font-weight: bold;
+    text-align: center;
+    line-height: 1rem;
+    padding: 0.2rem;
+}
+* .collectionBookInfo:nth-child(odd){
+    background: #8b9b89;
+}
+
+@media screen and (min-width:320px) and (max-width:475px) {
+
+    .collection-table {
+        margin-bottom: 4rem;
+        background: #64829b9c;
+        width: 90%;
+        box-shadow: 6px 4px 15px #00000099;
+    }
+
+}
+
+@media screen and (min-width:476px) and (max-width:767px) {
+    .collection-table {
+        margin-bottom: 4rem;
+        background: #64829b9c;
+        width: 90%;
+        box-shadow: 6px 4px 15px #00000099;
+        font-size: 1.1rem;
+    }
+    .collectionHeader {
+        font-weight: bold;
+        text-align: center;
+        line-height: 1rem;
+        padding: 0.2rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width:767px) and (max-width:1024px) {
+
+    .collection-table {
+        margin-bottom: 4rem;
+        background: #64829b9c;
+        width: 90%;
+        box-shadow: 6px 4px 15px #00000099;
+        font-size: 1.4rem;
+    }
+    .collectionHeader {
+        font-weight: bold;
+        text-align: center;
+        line-height: 1rem;
+        padding: 1rem;
+        font-size: 1.4rem;
+    }
+
+    .removeBtn {
+    width: 1.4rem;
+    margin-left: 10%;
+    vertical-align: text-bottom;
+}
+}
+@media screen and (min-width:1025px) {
+
+    .collection-table {
+        margin-bottom: 4rem;
+        background: #64829b9c;
+        width: 90%;
+        box-shadow: 6px 4px 15px #00000099;
+        font-size: 1.4rem;
+    }
+    .collectionHeader {
+        font-weight: bold;
+        text-align: center;
+        line-height: 1.5rem;
+        padding: 1rem;
+        font-size: 1.4rem;
+    }
+
+    .removeBtn {
+    width: 1.4rem;
+    margin-left: 10%;
+    vertical-align: text-bottom;
+}
+}

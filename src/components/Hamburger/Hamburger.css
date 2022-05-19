@@ -1,0 +1,18 @@
+.hamburgerIcon {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column nowrap;
+    z-index: 10;
+}
+
+.burger {
+    width: 2rem;
+    height: 0.5rem;
+    border-radius: 10px;
+    background-color: #7dcd805c;
+    transform-origin: 2px;
+    border: .1rem solid black;
+    transition: all 0.3s linear;
+}
