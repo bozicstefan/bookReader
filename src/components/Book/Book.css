@@ -1,4 +1,4 @@
-* .book-div{
+* .book-div {
     background: #2e4d2959;
     padding: 1rem;
     display: flex;
@@ -11,17 +11,27 @@
     margin-bottom: 1rem;
 }
 
-* .bookImg{
+* .bookImg {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
+    width: 200px;
+    border: 1px solid red;
+    background: aliceblue;
+    height: 70%;
 }
 
-* .book-div:hover{
+* .book-div:hover {
     background: #2e4d2987;
     border: 2px dashed;
 }
 
-* .textarea-div{
+* .title {
+    background-color: #5096ff57;
+    width: 100%;
+    text-align: center;
+}
+
+* .textarea-div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,13 +48,23 @@
     color: black;
 }
 
-* .addNote-btn{
+* .addNote-btn {
     margin: 0.5rem;
     cursor: pointer;
     background-color: lightsteelblue;
 }
 
-* .addNote-btn:hover{
+* .addNote-btn:hover {
+    background-color: #4884d2;
+}
+
+*.editNote-btn {
+    margin: 0.5rem;
+    cursor: pointer;
+    background-color: lightsteelblue;
+}
+
+*.editNote-btn:hover {
     background-color: #4884d2;
 }
 
@@ -52,27 +72,29 @@
     margin: .5rem;
 }
 
-* .addBook-btn, .removeBook-btn{
+* .addBook-btn,
+.removeBook-btn {
     margin-top: 0.5rem;
     margin-bottom: .5rem;
     cursor: pointer;
 }
 
-*.addBook-btn:hover{
+*.addBook-btn:hover {
     background: #4826ec5c;
 }
-*.removeBook-btn:hover{
+
+*.removeBook-btn:hover {
     background: #ff3f3fc2;
 }
 
-* .bookInfo{
+* .bookInfo {
     text-decoration: underline;
 }
 
 
 
-.bookAdded{
-    border:2px solid ;
+.bookAdded {
+    border: 2px solid;
     background: #2e4d2959;
     padding: 1rem;
     display: flex;
@@ -85,7 +107,7 @@
     margin-bottom: 1rem;
 }
 
-* .checkbox-div{
+* .checkbox-div {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -93,13 +115,13 @@
     margin-top: 0.4rem;
 }
 
-.status-done{
+.status-done {
     background-color: #00ff2b52;
     padding: 0.3rem;
     border-radius: 5px;
 }
 
-.status-inProgress{
+.status-inProgress {
     background-color: #4826ec5c;
     padding: 0.3rem;
     border-radius: 5px;
@@ -113,19 +135,20 @@
     }
 
     .input-div button {
-    border-radius: 8px;
-    background: #90f27e6b;
-    cursor: pointer;
-    font-size: 1rem;
-}
+        border-radius: 8px;
+        background: #90f27e6b;
+        cursor: pointer;
+        font-size: 1rem;
+    }
 
 }
 
 @media screen and (min-width:320px) and (max-width:475px) {
- .bookInfo {
-    text-decoration: underline;
-    font-size: 1.2rem;
-}
+    .bookInfo {
+        text-decoration: underline;
+        font-size: 1.2rem;
+    }
+
     .book-div {
         background: #2e4d2959;
         padding: .2rem;
@@ -138,8 +161,9 @@
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
-    .bookAdded{
-        border:2px solid ;
+
+    .bookAdded {
+        border: 2px solid;
         background: #2e4d2959;
         padding: .2rem;
         display: flex;
@@ -152,6 +176,7 @@
         margin-bottom: 1rem;
         box-shadow: 6px 4px 15px #00000099;
     }
+
     .bookInfo {
         text-decoration: underline;
         font-size: 1.2rem;
@@ -170,6 +195,7 @@
         margin-top: 0.5rem;
         width: 70%;
     }
+
     .textarea-div textarea {
         background: cadetblue;
         color: black;
@@ -183,113 +209,116 @@
         flex-direction: column;
         align-items: center;
     }
-    .myNote-text{
+
+    .myNote-text {
         background: darkgray;
     }
 
-    .addBook-btn, .removeBook-btn {
-            margin-top: 0.5rem;
-            margin-bottom: 0.5rem;
-            cursor: pointer;
-            background: #ffe4c4b0;
-        }
-        .addBook-btn:hover{
-            background: #4826ec5c;
-        }
-        .removeBook-btn:hover {
-            background: #ff3f3fc2;
-        }
-    }
-    
-    @media screen and (min-width:476px) and (max-width:767px) {
-        .book-div {
-            background: #2e4d2959;
-            padding: 1rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            border-radius: 10px;
-            width: 20rem;
-            margin: 0 auto;
-            margin-top: 1rem;
-            margin-bottom: 1rem;
-            font-size: 1.2rem;
-        }
-
-        .bookAdded{
-            border:2px solid ;
-            background: #2e4d2959;
-            padding: .2rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            border-radius: 10px;
-            width: 20rem;
-            margin: 0 auto;
-            margin-top: 1rem;
-            margin-bottom: 1rem;
-            box-shadow: 6px 4px 15px #00000099;
-            font-size: 1.2rem;
-        }
-
-        .bookInfo {
-            text-decoration: underline;
-            font-size: 1.4rem;
-        }
+    .addBook-btn,
+    .removeBook-btn {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        cursor: pointer;
+        background: #ffe4c4b0;
     }
 
-    @media screen and (min-width:768px)and (max-width:1024px)  {
-        .book-div {
-            background: #2e4d2959;
-            padding: 1rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            border-radius: 10px;
-            width: 25rem;
-            margin: 0 auto;
-            margin-top: 1rem;
-            margin-bottom: 1rem;
-            font-size: 1.4rem;
-        }
-
-        .bookAdded{
-            border:2px solid ;
-            background: #2e4d2959;
-            padding: .2rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            border-radius: 10px;
-            width: 25rem;
-            margin: 0 auto;
-            margin-top: 1rem;
-            margin-bottom: 1rem;
-            box-shadow: 6px 4px 15px #00000099;
-            font-size: 1.4rem;
-        }
-
-        .bookInfo {
-            text-decoration: underline;
-            font-size: 1.4rem;
-        }
-
-        
-        .textarea-div textarea {
-            background: cadetblue;
-            color: black;
-            padding: 0.5rem;
-            width: 20rem;
-        }
-
-        .suggestion {
-            border-right: 1px solid #c5dcc9;
-            border-left: 1px solid #c5dcc9;
-            border-bottom: 1px solid #c5dcc9;
-            cursor: pointer;
-            text-align: center;
-            padding: 0.3rem 0.2rem;
-            font-size: 1.4rem;
-        }
+    .addBook-btn:hover {
+        background: #4826ec5c;
     }
-    
+
+    .removeBook-btn:hover {
+        background: #ff3f3fc2;
+    }
+}
+
+@media screen and (min-width:476px) and (max-width:767px) {
+    .book-div {
+        background: #2e4d2959;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+        width: 20rem;
+        margin: 0 auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .bookAdded {
+        border: 2px solid;
+        background: #2e4d2959;
+        padding: .2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+        width: 20rem;
+        margin: 0 auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        box-shadow: 6px 4px 15px #00000099;
+        font-size: 1.2rem;
+    }
+
+    .bookInfo {
+        text-decoration: underline;
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (min-width:768px)and (max-width:1024px) {
+    .book-div {
+        background: #2e4d2959;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+        width: 25rem;
+        margin: 0 auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1.4rem;
+    }
+
+    .bookAdded {
+        border: 2px solid;
+        background: #2e4d2959;
+        padding: .2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+        width: 25rem;
+        margin: 0 auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        box-shadow: 6px 4px 15px #00000099;
+        font-size: 1.4rem;
+    }
+
+    .bookInfo {
+        text-decoration: underline;
+        font-size: 1.4rem;
+    }
+
+
+    .textarea-div textarea {
+        background: cadetblue;
+        color: black;
+        padding: 0.5rem;
+        width: 20rem;
+    }
+
+    .suggestion {
+        border-right: 1px solid #c5dcc9;
+        border-left: 1px solid #c5dcc9;
+        border-bottom: 1px solid #c5dcc9;
+        cursor: pointer;
+        text-align: center;
+        padding: 0.3rem 0.2rem;
+        font-size: 1.4rem;
+    }
+}

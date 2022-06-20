@@ -1,5 +1,8 @@
 import '../Book/Book.css'
+// import noImage from '../../IMG/no-image.png'
 const BookAdded = ({ singleBook, addedBooks, setAddedBooks }) => {
+
+    let source = `https://covers.openlibrary.org/b/olid/${singleBook.edition_key[0]}-M.jpg`
 
     return (
         <div className="bookAdded">
@@ -9,7 +12,7 @@ const BookAdded = ({ singleBook, addedBooks, setAddedBooks }) => {
             {singleBook.author_name ? singleBook.author_name : 'N/A'}
             <p><b className='bookInfo'>First published:</b></p>
             {singleBook.first_publish_year}
-            <img className='bookImg' src={`https://covers.openlibrary.org/b/olid/${singleBook.edition_key[0]}-M.jpg`} alt="cover" />
+            <img className='bookImg' src={source} alt="cover" />
 
             {/* if singleBook has no myNote property nothing displayed */}
             {/* else display myNote */}

@@ -5,7 +5,12 @@ const BookFromList = ({ singleBook, addedBooks, setAddedBooks }) => {
 
     const [note, setNote] = useState('')
     const [check, setCheck] = useState(false)
+    const [visible, setVisible] = useState(false);
 
+    const handleNoteChange = event => {
+        // update textarea value
+        setNote(event.target.value);
+    };
 
     return (
 
@@ -23,16 +28,16 @@ const BookFromList = ({ singleBook, addedBooks, setAddedBooks }) => {
                     {/* ADD NOTE BUTTON */}
                     {/* if singleBook has no myNote property, display textarea and a button */}
                     {/* else display myNote */}
-                    {!singleBook.myNote ?
+                    {!singleBook.myNote || (singleBook.myNote && visible) ?
                         <div className="textarea-div">
-                            <textarea name="notes" id="note" cols="20" rows="3" placeholder="Add note here..."
-                                onInput={(e) => {
-                                    setNote(e.target.value)
-                                }}
+                            <textarea style={{ display: visible ? 'block' : 'none' }}
+                                name="notes" id="note" cols="20" rows="3" placeholder="Add note here..."
+                                value={note} onInput={handleNoteChange}
                             >
 
                             </textarea>
                             <button className="addNote-btn" onClick={() => {
+                                setVisible(!visible)
                                 singleBook.myNote = note
                             }}>Add note</button>
                         </div>
@@ -40,6 +45,10 @@ const BookFromList = ({ singleBook, addedBooks, setAddedBooks }) => {
                         <div className="myNote-div">
                             <p><b className='bookInfo'>My note: </b></p>
                             <p className="myNote-text">{singleBook.myNote}</p>
+                            {/* EDIT NOTE BUTTON */}
+                            <button className="editNote-btn" onClick={() => {
+                                setVisible(!visible)
+                            }}>Edit note</button>
                         </div>
                     }
 
@@ -58,7 +67,7 @@ const BookFromList = ({ singleBook, addedBooks, setAddedBooks }) => {
                     {/* CHECK DONE */}
                     <div className="checkbox-div"
                         onChange={() => {
-                            setCheck(v => !v)
+                            setCheck(!check)
                             singleBook.done = !singleBook.done
                             console.log('check:', singleBook.done)
                         }

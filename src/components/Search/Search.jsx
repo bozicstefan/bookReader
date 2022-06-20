@@ -28,7 +28,7 @@ const Search = ({ books, setBooks, addedBooks, setAddedBooks, addedCollections }
     return (
         <div className="search-div">
             <Nav addedBooks={addedBooks} addedCollections={addedCollections} />
-
+            <h1 className="title">Book Searcher app</h1>
             <div className="input-div">
                 {/* SEARCH QUERY */}
                 <input value={searchQuery} placeholder="Enter your search..." type="text"

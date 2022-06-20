@@ -5,6 +5,7 @@ import SearchResults from './components/SearchResults/SearchResults'
 import BookList from './components/BookList/BookList';
 import Collections from './components/Collections/Collections'
 import ScrollButton from './components/ScrollButton/ScrollButton'
+
 function App() {
 
   // go and get this stuff done!!!
@@ -17,7 +18,7 @@ function App() {
   const [counter, setCounter] = useState(0)
 
   return (
-    // <div className="App">
+    
   <Router>
     <Routes>
       <Route path="/" element={
@@ -65,7 +66,7 @@ function App() {
 
     </Routes>
   </Router>
-    // </div>
+   
   );
 }
 
