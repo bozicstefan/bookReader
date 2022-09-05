@@ -7,4 +7,4 @@ _______________
 - Delete collections
 
 hosted at:
-heroku.com
+https://my-reader-app.herokuapp.com
