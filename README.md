@@ -7,4 +7,4 @@ _______________
 - Delete collections
 
 hosted at:
-https://my-reader-app.herokuapp.com
+https://book-reader-opal.vercel.app/
